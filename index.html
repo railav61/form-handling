@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>User Information</h1>
+      <form class="form-container" onsubmit="submitHandler(event)">
+        <label for="first">First Name<span>*</span></label>
+        <input
+          name="first"
+          type="text"
+          id="firstn"
+          placeholder="Enter first name here"
+          required
+        />
+        <div class="ruler"></div>
+        <label for="last">Last Name</label>
+        <input
+          type="text"
+          name="last"
+          id="lastn"
+          placeholder="Enter Last name here"
+        />
+        <div class="ruler"></div>
+        <label for="email">Email Address<span>*</span></label>
+        <input
+          name="email"
+          type="email"
+          id="email"
+          placeholder="Enter email here"
+          required
+        />
+        <div class="ruler"></div>
+        <label for="mob">Mobile No.<span>*</span></label>
+        <input
+          type="tel"
+          name="mob"
+          id="tele"
+          placeholder="Enter number here"
+          required
+        />
+        <div class="ruler"></div>
+        <label for="address">Address<span>*</span></label>
+        <textarea
+          name="address"
+          id="address"
+          rows="5"
+          placeholder="Enter address here"
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
